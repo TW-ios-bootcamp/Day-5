@@ -8,18 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
+    var products : [Product]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        products = ProductFactory.getProducts()
+        
     }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK:- UITableViewDataSource methods
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
     }
-
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var productCell = tableView.dequeueReusableCellWithIdentifier("productCell") as ProductCell!
+        productCell.render(products[indexPath.row])
+        
+        return productCell
+    }
+    
+    //MARK:- UITableViewDelegate methods
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
 
 }
 

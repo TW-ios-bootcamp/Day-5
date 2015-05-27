@@ -13,6 +13,24 @@
 		FF5F6CF61B1602F500831291 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5F6CF51B1602F500831291 /* Images.xcassets */; };
 		FF5F6CF91B1602F500831291 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5F6CF71B1602F500831291 /* LaunchScreen.xib */; };
 		FF5F6D051B1602F600831291 /* AppleStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6D041B1602F600831291 /* AppleStoreTests.swift */; };
+		FF5F6D0F1B1604C600831291 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6D0E1B1604C600831291 /* ProductCell.swift */; };
+		FF5F6D111B1609E400831291 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6D101B1609E400831291 /* Product.swift */; };
+		FF5F6D131B160C1A00831291 /* ProductFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6D121B160C1A00831291 /* ProductFactory.swift */; };
+		FF8E05C81B161A2A0090F451 /* imac-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05B81B161A2A0090F451 /* imac-full.jpg */; };
+		FF8E05C91B161A2A0090F451 /* ipad-air-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05B91B161A2A0090F451 /* ipad-air-full.jpg */; };
+		FF8E05CA1B161A2A0090F451 /* iphone-6-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05BA1B161A2A0090F451 /* iphone-6-full.jpg */; };
+		FF8E05CB1B161A2A0090F451 /* macbook-air-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05BB1B161A2A0090F451 /* macbook-air-full.jpg */; };
+		FF8E05CC1B161A2A0090F451 /* macbook-pro-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05BC1B161A2A0090F451 /* macbook-pro-full.jpg */; };
+		FF8E05CD1B161A2A0090F451 /* tv-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05BD1B161A2A0090F451 /* tv-full.jpg */; };
+		FF8E05CE1B161A2A0090F451 /* watch-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05BE1B161A2A0090F451 /* watch-full.jpg */; };
+		FF8E05CF1B161A2A0090F451 /* imac-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C01B161A2A0090F451 /* imac-thumb.jpg */; };
+		FF8E05D01B161A2A0090F451 /* ipad-air-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C11B161A2A0090F451 /* ipad-air-thumb.jpg */; };
+		FF8E05D11B161A2A0090F451 /* iphone-6-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C21B161A2A0090F451 /* iphone-6-thumb.jpg */; };
+		FF8E05D21B161A2A0090F451 /* macbook-air-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C31B161A2A0090F451 /* macbook-air-thumb.jpg */; };
+		FF8E05D31B161A2A0090F451 /* macbook-pro-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C41B161A2A0090F451 /* macbook-pro-thumb.jpg */; };
+		FF8E05D41B161A2A0090F451 /* tv-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C51B161A2A0090F451 /* tv-thumb.jpg */; };
+		FF8E05D51B161A2A0090F451 /* watch-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C61B161A2A0090F451 /* watch-thumb.jpg */; };
+		FF8E05D61B161A2A0090F451 /* apple-products.json in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C71B161A2A0090F451 /* apple-products.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +54,24 @@
 		FF5F6CFE1B1602F600831291 /* AppleStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5F6D031B1602F600831291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5F6D041B1602F600831291 /* AppleStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreTests.swift; sourceTree = "<group>"; };
+		FF5F6D0E1B1604C600831291 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FF5F6D101B1609E400831291 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FF5F6D121B160C1A00831291 /* ProductFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFactory.swift; sourceTree = "<group>"; };
+		FF8E05B81B161A2A0090F451 /* imac-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imac-full.jpg"; sourceTree = "<group>"; };
+		FF8E05B91B161A2A0090F451 /* ipad-air-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ipad-air-full.jpg"; sourceTree = "<group>"; };
+		FF8E05BA1B161A2A0090F451 /* iphone-6-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone-6-full.jpg"; sourceTree = "<group>"; };
+		FF8E05BB1B161A2A0090F451 /* macbook-air-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "macbook-air-full.jpg"; sourceTree = "<group>"; };
+		FF8E05BC1B161A2A0090F451 /* macbook-pro-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "macbook-pro-full.jpg"; sourceTree = "<group>"; };
+		FF8E05BD1B161A2A0090F451 /* tv-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tv-full.jpg"; sourceTree = "<group>"; };
+		FF8E05BE1B161A2A0090F451 /* watch-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "watch-full.jpg"; sourceTree = "<group>"; };
+		FF8E05C01B161A2A0090F451 /* imac-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imac-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C11B161A2A0090F451 /* ipad-air-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ipad-air-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C21B161A2A0090F451 /* iphone-6-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone-6-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C31B161A2A0090F451 /* macbook-air-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "macbook-air-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C41B161A2A0090F451 /* macbook-pro-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "macbook-pro-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C51B161A2A0090F451 /* tv-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tv-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C61B161A2A0090F451 /* watch-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "watch-thumb.jpg"; sourceTree = "<group>"; };
+		FF8E05C71B161A2A0090F451 /* apple-products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apple-products.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +113,17 @@
 		FF5F6CEB1B1602F500831291 /* AppleStore */ = {
 			isa = PBXGroup;
 			children = (
+				FF8E05B61B161A2A0090F451 /* Apple Products */,
+				FF8E05C71B161A2A0090F451 /* apple-products.json */,
 				FF5F6CEE1B1602F500831291 /* AppDelegate.swift */,
 				FF5F6CF01B1602F500831291 /* ViewController.swift */,
 				FF5F6CF21B1602F500831291 /* Main.storyboard */,
+				FF5F6D0E1B1604C600831291 /* ProductCell.swift */,
 				FF5F6CF51B1602F500831291 /* Images.xcassets */,
 				FF5F6CF71B1602F500831291 /* LaunchScreen.xib */,
 				FF5F6CEC1B1602F500831291 /* Supporting Files */,
+				FF5F6D101B1609E400831291 /* Product.swift */,
+				FF5F6D121B160C1A00831291 /* ProductFactory.swift */,
 			);
 			path = AppleStore;
 			sourceTree = "<group>";
@@ -110,6 +151,43 @@
 				FF5F6D031B1602F600831291 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF8E05B61B161A2A0090F451 /* Apple Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E05B71B161A2A0090F451 /* full */,
+				FF8E05BF1B161A2A0090F451 /* thumbnails */,
+			);
+			path = "Apple Products";
+			sourceTree = "<group>";
+		};
+		FF8E05B71B161A2A0090F451 /* full */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E05B81B161A2A0090F451 /* imac-full.jpg */,
+				FF8E05B91B161A2A0090F451 /* ipad-air-full.jpg */,
+				FF8E05BA1B161A2A0090F451 /* iphone-6-full.jpg */,
+				FF8E05BB1B161A2A0090F451 /* macbook-air-full.jpg */,
+				FF8E05BC1B161A2A0090F451 /* macbook-pro-full.jpg */,
+				FF8E05BD1B161A2A0090F451 /* tv-full.jpg */,
+				FF8E05BE1B161A2A0090F451 /* watch-full.jpg */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		FF8E05BF1B161A2A0090F451 /* thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E05C01B161A2A0090F451 /* imac-thumb.jpg */,
+				FF8E05C11B161A2A0090F451 /* ipad-air-thumb.jpg */,
+				FF8E05C21B161A2A0090F451 /* iphone-6-thumb.jpg */,
+				FF8E05C31B161A2A0090F451 /* macbook-air-thumb.jpg */,
+				FF8E05C41B161A2A0090F451 /* macbook-pro-thumb.jpg */,
+				FF8E05C51B161A2A0090F451 /* tv-thumb.jpg */,
+				FF8E05C61B161A2A0090F451 /* watch-thumb.jpg */,
+			);
+			path = thumbnails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +271,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5F6CF41B1602F500831291 /* Main.storyboard in Resources */,
+				FF8E05C91B161A2A0090F451 /* ipad-air-full.jpg in Resources */,
+				FF8E05D41B161A2A0090F451 /* tv-thumb.jpg in Resources */,
+				FF8E05D11B161A2A0090F451 /* iphone-6-thumb.jpg in Resources */,
+				FF8E05CB1B161A2A0090F451 /* macbook-air-full.jpg in Resources */,
 				FF5F6CF91B1602F500831291 /* LaunchScreen.xib in Resources */,
+				FF8E05D31B161A2A0090F451 /* macbook-pro-thumb.jpg in Resources */,
+				FF8E05CE1B161A2A0090F451 /* watch-full.jpg in Resources */,
+				FF8E05C81B161A2A0090F451 /* imac-full.jpg in Resources */,
+				FF8E05CC1B161A2A0090F451 /* macbook-pro-full.jpg in Resources */,
+				FF8E05D21B161A2A0090F451 /* macbook-air-thumb.jpg in Resources */,
+				FF8E05CD1B161A2A0090F451 /* tv-full.jpg in Resources */,
+				FF8E05CA1B161A2A0090F451 /* iphone-6-full.jpg in Resources */,
+				FF8E05D01B161A2A0090F451 /* ipad-air-thumb.jpg in Resources */,
+				FF8E05CF1B161A2A0090F451 /* imac-thumb.jpg in Resources */,
+				FF8E05D51B161A2A0090F451 /* watch-thumb.jpg in Resources */,
+				FF8E05D61B161A2A0090F451 /* apple-products.json in Resources */,
 				FF5F6CF61B1602F500831291 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5F6D0F1B1604C600831291 /* ProductCell.swift in Sources */,
+				FF5F6D111B1609E400831291 /* Product.swift in Sources */,
+				FF5F6D131B160C1A00831291 /* ProductFactory.swift in Sources */,
 				FF5F6CF11B1602F500831291 /* ViewController.swift in Sources */,
 				FF5F6CEF1B1602F500831291 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +501,7 @@
 				FF5F6D0A1B1602F600831291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF5F6D0B1B1602F600831291 /* Build configuration list for PBXNativeTarget "AppleStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +510,7 @@
 				FF5F6D0D1B1602F600831291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="epM-hp-P4E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AppleStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,91 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bTh-SE-dOh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="116" id="oaa-IC-LST" customClass="ProductCell" customModule="AppleStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oaa-IC-LST" id="eGL-dZ-uc7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xaB-nz-KCl">
+                                                    <rect key="frame" x="8" y="8" width="100" height="99"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="iLo-gb-dKW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFz-gy-g5B">
+                                                    <rect key="frame" x="116" y="8" width="476" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPg-WI-7L7">
+                                                    <rect key="frame" x="116" y="86" width="51" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xaB-nz-KCl" firstAttribute="leading" secondItem="eGL-dZ-uc7" secondAttribute="leadingMargin" id="1vg-Yo-r07"/>
+                                                <constraint firstItem="AFz-gy-g5B" firstAttribute="leading" secondItem="xaB-nz-KCl" secondAttribute="trailing" constant="8" id="C1g-qJ-N5Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PPg-WI-7L7" secondAttribute="bottom" id="LPU-AP-KO9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xaB-nz-KCl" secondAttribute="bottom" id="UzY-H4-thO"/>
+                                                <constraint firstItem="AFz-gy-g5B" firstAttribute="top" secondItem="eGL-dZ-uc7" secondAttribute="topMargin" id="V8G-BJ-mAZ"/>
+                                                <constraint firstItem="AFz-gy-g5B" firstAttribute="trailing" secondItem="eGL-dZ-uc7" secondAttribute="trailingMargin" id="clo-Yg-U1V"/>
+                                                <constraint firstItem="PPg-WI-7L7" firstAttribute="leading" secondItem="xaB-nz-KCl" secondAttribute="trailing" constant="8" id="dV6-JZ-Fem"/>
+                                                <constraint firstItem="xaB-nz-KCl" firstAttribute="top" secondItem="eGL-dZ-uc7" secondAttribute="topMargin" id="ycv-x8-iTW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="previewImageView" destination="xaB-nz-KCl" id="XHj-ce-d9X"/>
+                                            <outlet property="priceLabel" destination="PPg-WI-7L7" id="MVL-3G-TAT"/>
+                                            <outlet property="titleLabel" destination="AFz-gy-g5B" id="DEA-jS-v7t"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Ufl-yl-nx6"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="KPY-FK-iyn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bTh-SE-dOh" secondAttribute="trailing" constant="-16" id="ONi-dL-OLl"/>
+                            <constraint firstItem="bTh-SE-dOh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-64" id="PuF-4f-ie1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bTh-SE-dOh" secondAttribute="bottom" id="cgI-w8-8QW"/>
+                            <constraint firstItem="bTh-SE-dOh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="hn0-wM-hd5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="53n-dm-mL7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Wr-hr-PRt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="epM-hp-P4E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bwr-6f-Mrd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="sTj-PW-XDA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRV-AR-sxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="1079"/>
         </scene>
     </scenes>
 </document>
