@@ -34,5 +34,4 @@ class Product {
         fullImageName = fName
         thumbnailImageName = tName
     }
-   
 }

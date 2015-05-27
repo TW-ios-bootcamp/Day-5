@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     var products : [Product]!
-    var selectedProduct : Product?
+    
+    @IBOutlet weak var tableView : UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +37,13 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     //MARK:- UITableViewDelegate methods
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedProduct = products[indexPath.row]
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showDetail") {
             var detailViewController = segue.destinationViewController as DetailViewController
+            let selectedProduct = products[self.tableView.indexPathForSelectedRow()!.row]
             detailViewController.selectedProduct = selectedProduct
         }
     }
