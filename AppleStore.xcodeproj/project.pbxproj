@@ -31,7 +31,7 @@
 		FF8E05D41B161A2A0090F451 /* tv-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C51B161A2A0090F451 /* tv-thumb.jpg */; };
 		FF8E05D51B161A2A0090F451 /* watch-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C61B161A2A0090F451 /* watch-thumb.jpg */; };
 		FF8E05D61B161A2A0090F451 /* apple-products.json in Resources */ = {isa = PBXBuildFile; fileRef = FF8E05C71B161A2A0090F451 /* apple-products.json */; };
-		FF8E05D81B161DDF0090F451 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E05D71B161DDF0090F451 /* DetailViewController.swift */; };
+		FF8E05DA1B1626450090F451 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E05D91B1626450090F451 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 		FF8E05C51B161A2A0090F451 /* tv-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tv-thumb.jpg"; sourceTree = "<group>"; };
 		FF8E05C61B161A2A0090F451 /* watch-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "watch-thumb.jpg"; sourceTree = "<group>"; };
 		FF8E05C71B161A2A0090F451 /* apple-products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apple-products.json"; sourceTree = "<group>"; };
-		FF8E05D71B161DDF0090F451 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "Apple Products/DetailViewController.swift"; sourceTree = "<group>"; };
+		FF8E05D91B1626450090F451 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				FF8E05C71B161A2A0090F451 /* apple-products.json */,
 				FF5F6CEE1B1602F500831291 /* AppDelegate.swift */,
 				FF5F6CF01B1602F500831291 /* ViewController.swift */,
-				FF8E05D71B161DDF0090F451 /* DetailViewController.swift */,
+				FF8E05D91B1626450090F451 /* DetailViewController.swift */,
 				FF5F6CF21B1602F500831291 /* Main.storyboard */,
 				FF5F6D0E1B1604C600831291 /* ProductCell.swift */,
 				FF5F6CF51B1602F500831291 /* Images.xcassets */,
@@ -311,7 +311,7 @@
 				FF5F6D0F1B1604C600831291 /* ProductCell.swift in Sources */,
 				FF5F6D111B1609E400831291 /* Product.swift in Sources */,
 				FF5F6D131B160C1A00831291 /* ProductFactory.swift in Sources */,
-				FF8E05D81B161DDF0090F451 /* DetailViewController.swift in Sources */,
+				FF8E05DA1B1626450090F451 /* DetailViewController.swift in Sources */,
 				FF5F6CF11B1602F500831291 /* ViewController.swift in Sources */,
 				FF5F6CEF1B1602F500831291 /* AppDelegate.swift in Sources */,
 			);
