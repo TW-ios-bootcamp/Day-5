@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-
+    
     var products : [Product]!
+    var selectedProduct : Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         
     }
     
-
+    
     
     //MARK:- UITableViewDataSource methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,9 +36,16 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     //MARK:- UITableViewDelegate methods
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        selectedProduct = products[indexPath.row]
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "showDetail") {
+            var detailViewController = segue.destinationViewController as DetailViewController
+            detailViewController.selectedProduct = selectedProduct
+        }
+    }
+    
+    
 }
 

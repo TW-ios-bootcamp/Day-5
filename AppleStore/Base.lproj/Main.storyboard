@@ -61,6 +61,7 @@
                                             <outlet property="previewImageView" destination="xaB-nz-KCl" id="XHj-ce-d9X"/>
                                             <outlet property="priceLabel" destination="PPg-WI-7L7" id="MVL-3G-TAT"/>
                                             <outlet property="titleLabel" destination="AFz-gy-g5B" id="DEA-jS-v7t"/>
+                                            <segue destination="9yV-Tx-0O1" kind="show" identifier="showDetail" id="hht-Yq-B1w"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,6 +84,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="415"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hFw-eY-zfn">
+            <objects>
+                <viewController id="9yV-Tx-0O1" customClass="DetailViewController" customModule="AppleStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e4G-Q1-Jzd"/>
+                        <viewControllerLayoutGuide type="bottom" id="7VV-I7-zzI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHb-oA-tuY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKY-Ui-jnH">
+                                <rect key="frame" x="16" y="61" width="568" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Qmd-is-SVA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-2n-IGZ">
+                                <rect key="frame" x="16" y="30" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3C-FM-mZB">
+                                <rect key="frame" x="16" y="381" width="568" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s3C-FM-mZB" firstAttribute="leading" secondItem="dHb-oA-tuY" secondAttribute="leadingMargin" id="03M-hk-sh7"/>
+                            <constraint firstItem="s3C-FM-mZB" firstAttribute="trailing" secondItem="dHb-oA-tuY" secondAttribute="trailingMargin" id="Ey6-1B-bXe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKY-Ui-jnH" secondAttribute="trailing" id="Jet-GB-JzT"/>
+                            <constraint firstItem="7VV-I7-zzI" firstAttribute="top" secondItem="s3C-FM-mZB" secondAttribute="bottom" constant="8" id="Juq-ee-8mz"/>
+                            <constraint firstItem="s3C-FM-mZB" firstAttribute="top" secondItem="QKY-Ui-jnH" secondAttribute="bottom" constant="20" id="QRw-9s-FbB"/>
+                            <constraint firstItem="QKY-Ui-jnH" firstAttribute="top" secondItem="5GU-2n-IGZ" secondAttribute="bottom" constant="10" id="iZk-6M-BqC"/>
+                            <constraint firstItem="QKY-Ui-jnH" firstAttribute="leading" secondItem="dHb-oA-tuY" secondAttribute="leadingMargin" id="pGX-Gx-IF1"/>
+                            <constraint firstItem="5GU-2n-IGZ" firstAttribute="top" secondItem="e4G-Q1-Jzd" secondAttribute="bottom" constant="10" id="rgd-ip-CNS"/>
+                            <constraint firstItem="5GU-2n-IGZ" firstAttribute="trailing" secondItem="dHb-oA-tuY" secondAttribute="trailingMargin" id="saV-7N-oc2"/>
+                            <constraint firstItem="5GU-2n-IGZ" firstAttribute="leading" secondItem="dHb-oA-tuY" secondAttribute="leadingMargin" id="tiT-TT-5QP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailTextView" destination="s3C-FM-mZB" id="cTZ-lT-1Ii"/>
+                        <outlet property="fullImageView" destination="QKY-Ui-jnH" id="xYM-Zb-awN"/>
+                        <outlet property="titleLabel" destination="5GU-2n-IGZ" id="4bh-NC-CyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWI-1Q-VcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Wr-hr-PRt">
