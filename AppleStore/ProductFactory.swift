@@ -1,11 +1,3 @@
-//
-//  ProductFactory.swift
-//  AppleStore
-//
-//  Created by Tapan Thaker on 27/05/15.
-//  Copyright (c) 2015 Tapan Thaker. All rights reserved.
-//
-
 import UIKit
 
 class ProductFactory: NSObject {
