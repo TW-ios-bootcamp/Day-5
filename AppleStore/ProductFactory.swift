@@ -11,8 +11,6 @@ import UIKit
 class ProductFactory: NSObject {
     
     class func getProducts () -> [Product]{
-        var products : [Product] = []
-        
         let jsonData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("apple-products", ofType: "json")!)
         
         var error: NSError?
@@ -20,18 +18,13 @@ class ProductFactory: NSObject {
         
         let productsArray = productsDict["products"] as Array<Dictionary<String, String>>
         
-        for aProductDict in productsArray {
-            
-            let product = Product(name: aProductDict["title"]!,
-                                 price: aProductDict["price"]!,
-                            detailText: aProductDict["detail"]!,
-                    thumbnailImageName: aProductDict["thumbnailImage"]!,
-                         fullImageName: aProductDict["fullImage"]!)
-            
-            products.append(product)
+        return productsArray.map {aProductDict in
+            Product(name: aProductDict["title"]!,
+            price: aProductDict["price"]!,
+            detailText: aProductDict["detail"]!,
+            thumbnailImageName: aProductDict["thumbnailImage"]!,
+            fullImageName: aProductDict["fullImage"]!)
         }
-        
-        return products
     }
    
 }
