@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var detailTextView: UITextView!
+    var delegate: UpdateDataDelegate?
     
     var selectedProduct : Product?
     override func viewDidLoad() {
@@ -27,6 +28,10 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addToFavouriteClicked(sender: AnyObject) {
+        self.selectedProduct?.isFavourite = true
+        self.delegate?.onProductUpdated(self.selectedProduct!)
+    }
 
     /*
     // MARK: - Navigation
@@ -39,3 +44,8 @@ class DetailViewController: UIViewController {
     */
 
 }
+
+protocol UpdateDataDelegate {
+    func onProductUpdated(product: Product)
+}
+

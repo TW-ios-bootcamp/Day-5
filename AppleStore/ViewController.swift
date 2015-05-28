@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UpdateDataDelegate {
     
     var products : [Product]!
     
@@ -36,8 +36,13 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         if (segue.identifier == "showDetail") {
             var detailViewController = segue.destinationViewController as! DetailViewController
             let selectedProduct = products[self.tableView.indexPathForSelectedRow()!.row]
+            detailViewController.delegate = self
             detailViewController.selectedProduct = selectedProduct
         }
+    }
+    
+    func onProductUpdated(product: Product) {
+        tableView.reloadData()
     }
     
     
