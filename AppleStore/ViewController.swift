@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UpdateDataDelegate {
+class ViewController: UIViewController,UITableViewDataSource,UpdateDataDelegate {
     
     var products : [Product]!
     
@@ -11,8 +11,6 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         products = ProductFactory.getProducts()
         
     }
-    
-    
     
     //MARK:- UITableViewDataSource methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,11 +23,6 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         productCell.render(products[indexPath.row])
         
         return productCell
-    }
-    
-    //MARK:- UITableViewDelegate methods
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
