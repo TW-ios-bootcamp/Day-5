@@ -13,13 +13,26 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var detailTextView: UITextView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var delegate: UpdateDataDelegate?
-    
     var selectedProduct : Product?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        let task = session.dataTaskWithURL(NSURL(string: selectedProduct!.fullImageURL)!, completionHandler: { (data, response, error) -> Void in
+            var image = UIImage(named: "not_available")
+            if(error == nil){
+                image = UIImage(data: data)
+            }
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.activityIndicator.hidden = true
+                self.fullImageView.image = image
+            })
+        })
+        task.resume()
         titleLabel.text = selectedProduct?.name
-        fullImageView.image = selectedProduct?.fullImage
         detailTextView.text = selectedProduct?.detailText
     }
 
@@ -32,17 +45,6 @@ class DetailViewController: UIViewController {
         self.selectedProduct?.isFavourite = true
         self.delegate?.onProductUpdated(self.selectedProduct!)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 protocol UpdateDataDelegate {

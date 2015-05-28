@@ -137,13 +137,18 @@
                                     <action selector="addToFavouriteClicked:" destination="9yV-Tx-0O1" eventType="touchUpInside" id="uFC-Au-CPc"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="laC-Fk-BVd">
+                                <rect key="frame" x="291" y="245" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="s3C-FM-mZB" firstAttribute="leading" secondItem="dHb-oA-tuY" secondAttribute="leadingMargin" id="03M-hk-sh7"/>
                             <constraint firstItem="MFG-T1-lKr" firstAttribute="top" secondItem="s3C-FM-mZB" secondAttribute="bottom" constant="20" id="2m5-IM-fGI"/>
                             <constraint firstItem="s3C-FM-mZB" firstAttribute="trailing" secondItem="dHb-oA-tuY" secondAttribute="trailingMargin" id="Ey6-1B-bXe"/>
+                            <constraint firstItem="QKY-Ui-jnH" firstAttribute="centerX" secondItem="laC-Fk-BVd" secondAttribute="centerX" constant="-0.5" id="ITK-Df-hWN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QKY-Ui-jnH" secondAttribute="trailing" id="Jet-GB-JzT"/>
+                            <constraint firstItem="QKY-Ui-jnH" firstAttribute="centerY" secondItem="laC-Fk-BVd" secondAttribute="centerY" constant="0.5" id="Ohx-pN-d0p"/>
                             <constraint firstItem="s3C-FM-mZB" firstAttribute="top" secondItem="QKY-Ui-jnH" secondAttribute="bottom" constant="20" id="QRw-9s-FbB"/>
                             <constraint firstAttribute="centerX" secondItem="MFG-T1-lKr" secondAttribute="centerX" id="c7b-C9-YKO"/>
                             <constraint firstItem="QKY-Ui-jnH" firstAttribute="top" secondItem="5GU-2n-IGZ" secondAttribute="bottom" constant="10" id="iZk-6M-BqC"/>
@@ -155,6 +160,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="laC-Fk-BVd" id="0l4-fU-dTw"/>
                         <outlet property="detailTextView" destination="s3C-FM-mZB" id="cTZ-lT-1Ii"/>
                         <outlet property="fullImageView" destination="QKY-Ui-jnH" id="xYM-Zb-awN"/>
                         <outlet property="titleLabel" destination="5GU-2n-IGZ" id="4bh-NC-CyE"/>
