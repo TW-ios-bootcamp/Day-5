@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51484D41B16BFC300EA32B0 /* fav-no.png in Resources */ = {isa = PBXBuildFile; fileRef = D51484D21B16BFC300EA32B0 /* fav-no.png */; };
+		D51484D51B16BFC300EA32B0 /* fav-yes.png in Resources */ = {isa = PBXBuildFile; fileRef = D51484D31B16BFC300EA32B0 /* fav-yes.png */; };
 		FF5F6CEF1B1602F500831291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6CEE1B1602F500831291 /* AppDelegate.swift */; };
 		FF5F6CF11B1602F500831291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F6CF01B1602F500831291 /* ViewController.swift */; };
 		FF5F6CF41B1602F500831291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5F6CF21B1602F500831291 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D51484D21B16BFC300EA32B0 /* fav-no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fav-no.png"; sourceTree = "<group>"; };
+		D51484D31B16BFC300EA32B0 /* fav-yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fav-yes.png"; sourceTree = "<group>"; };
 		FF5F6CE91B1602F500831291 /* AppleStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5F6CED1B1602F500831291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5F6CEE1B1602F500831291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51484D11B16BFC300EA32B0 /* fav-images */ = {
+			isa = PBXGroup;
+			children = (
+				D51484D21B16BFC300EA32B0 /* fav-no.png */,
+				D51484D31B16BFC300EA32B0 /* fav-yes.png */,
+			);
+			name = "fav-images";
+			path = "thumbnails/fav-images";
+			sourceTree = "<group>";
+		};
 		FF5F6CE01B1602F500831291 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +173,7 @@
 		FF8E05B61B161A2A0090F451 /* Apple Products */ = {
 			isa = PBXGroup;
 			children = (
+				D51484D11B16BFC300EA32B0 /* fav-images */,
 				FF8E05B71B161A2A0090F451 /* full */,
 				FF8E05BF1B161A2A0090F451 /* thumbnails */,
 			);
@@ -274,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5F6CF41B1602F500831291 /* Main.storyboard in Resources */,
+				D51484D51B16BFC300EA32B0 /* fav-yes.png in Resources */,
 				FF8E05C91B161A2A0090F451 /* ipad-air-full.jpg in Resources */,
 				FF8E05D41B161A2A0090F451 /* tv-thumb.jpg in Resources */,
+				D51484D41B16BFC300EA32B0 /* fav-no.png in Resources */,
 				FF8E05D11B161A2A0090F451 /* iphone-6-thumb.jpg in Resources */,
 				FF8E05CB1B161A2A0090F451 /* macbook-air-full.jpg in Resources */,
 				FF5F6CF91B1602F500831291 /* LaunchScreen.xib in Resources */,

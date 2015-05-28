@@ -8,6 +8,7 @@ class Product {
     let name : String
     let price : String
     let detailText : String
+    var isFavourite : Bool
     
     var fullImage : UIImage? { get{
         return UIImage(named: fullImageName)
@@ -25,5 +26,6 @@ class Product {
         self.detailText = detailText
         fullImageName = fName
         thumbnailImageName = tName
+        self.isFavourite = false
     }
 }
