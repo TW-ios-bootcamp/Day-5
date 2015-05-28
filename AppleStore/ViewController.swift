@@ -21,7 +21,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var productCell = tableView.dequeueReusableCellWithIdentifier("productCell") as ProductCell!
+        var productCell = tableView.dequeueReusableCellWithIdentifier("productCell") as! ProductCell
         productCell.render(products[indexPath.row])
         
         return productCell
@@ -34,7 +34,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showDetail") {
-            var detailViewController = segue.destinationViewController as DetailViewController
+            var detailViewController = segue.destinationViewController as! DetailViewController
             let selectedProduct = products[self.tableView.indexPathForSelectedRow()!.row]
             detailViewController.selectedProduct = selectedProduct
         }
